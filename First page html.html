@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Sign Compass - Learn ASL</title>
+</head>
+<body>
+    <header>
+        <h1 class="site-title">Sign Compass</h1>
+        <a href="#" class="sign-in-up-button" onclick="openSignInOptions()">Sign In / Sign Up</a>
+    </header>
+    <img src="your-image-path.jpg" alt="Image Description">
+    <section class="features">
+        
+        <div class="feature">
+            <div class="feature-icon">📹</div>
+            <h2>Video Lessons</h2>
+            <p>Access a library of high-quality video lessons to learn American Sign Language at your own pace.</p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">🧩</div>
+            <h2>Interactive Quizzes</h2>
+            <p>Test your knowledge with engaging interactive quizzes designed to reinforce your learning and track your progress.</p>
+        </div>
+        <div class="feature">
+            <div class="feature-icon">📝</div>
+            <h2>Feedback</h2>
+            <p>Receive valuable feedback on your signing skills from our team of experienced ASL instructors and experts.</p>
+        </div>
+    </section>
+    
+    <footer>
+        &copy; 2023 Sign Compass
+    </footer>
+
+    <div id="signInOptionsModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeSignInOptions()">&times;</span>
+        </div>
+    </div>
+
+    <script>
+        function openSignInOptions() {
+            var modal = document.getElementById("signInOptionsModal");
+            modal.style.display = "block";
+        }
+
+        function closeSignInOptions() {
+            var modal = document.getElementById("signInOptionsModal");
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>
